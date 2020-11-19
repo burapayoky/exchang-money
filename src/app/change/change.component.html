@@ -1,0 +1,62 @@
+
+
+
+<div class="exchang">
+	<input class="in" type="number" #box ><br>
+
+	<select class="in" type="from" #box1 > 
+    <option value="AUD">ดอลลาร์ออสเตรเลีย (AUD)</option>
+    <option value="CAD">ดอลลาร์แคนาดา (CAD)</option>
+    <option value="CNY">หยวนจีน (CNY)</option>
+    <option value="EUR">ยูโร (EUR)</option>
+    <option value="GBP">ปอนด์ (GBP)</option>
+    <option value="HKD">ดอลลาร์ฮ่องกง (HKD)</option>
+    <option value="IDR">เงินรูเปียอินโดนีเซีย (IDR)</option>
+    <option value="INR">เงินรูปีของอินเดีย (INR)</option>
+    <option value="JNY">เงินเยนของญี่ปุ่น (JPY)</option>
+    <option value="KRW">เกาหลีวอน (KRW)</option>
+    <option value="LAK">กีบลาว (LAK)</option>
+    <option value="MMK">จ๊าดพม่า (MMK)</option>
+    <option value="MYR">ริงกิตมาเลเซีย (MYR)</option>
+    <option value="PHP">เงินเปโซของฟิลิปปินส์ (PHP)</option>
+    <option value="SGD">ดอลลาร์สิงคโปร์ (SGD)</option>
+    <option value="SEK">โครนสวีเดน (SEK)</option>
+    <option value="TWD">ดอลลาร์ไต้หวันใหม่ (TWD)</option>
+    <option value="USD" selected="">สหดอลลาร์สหรัฐอเมริกา (USD)</option>
+  </select><br>    
+
+  <button class="chbut" (click)="naMe(box.value,box1.value)">Change </button><br>
+
+</div>
+
+<div class = "result">
+  <h1>{{amount}}   {{name}}</h1>
+</div>
+
+
+
+<!--div class="exchang">
+	<input type="number" #box ><br>
+	<select type="from" #box1 > 
+<option value="AUD">ดอลลาร์ออสเตรเลีย (AUD)</option>
+<option value="CAD">ดอลลาร์แคนาดา (CAD)</option>
+<option value="CNY">หยวนจีน (CNY)</option>
+<option value="EUR">ยูโร (EUR)</option>
+<option value="GBP">ปอนด์ (GBP)</option>
+<option value="HKD">ดอลลาร์ฮ่องกง (HKD)</option>
+<option value="IDR" selected="">เงินรูเปียอินโดนีเซีย (IDR)</option>
+<option value="INR">เงินรูปีของอินเดีย (INR)</option>
+<option value="JNY">เงินเยนของญี่ปุ่น (JPY)</option>
+<option value="KRW">เกาหลีวอน (KRW)</option>
+<option value="LAK">กีบลาว (LAK)</option>
+<option value="MMK">จ๊าดพม่า (MMK)</option>
+<option value="MYR">ริงกิตมาเลเซีย (MYR)</option>
+<option value="PHP">เงินเปโซของฟิลิปปินส์ (PHP)</option>
+<option value="SGD">ดอลลาร์สิงคโปร์ (SGD)</option>
+<option value="SEK">โครนสวีเดน (SEK)</option>
+<option value="TWD">ดอลลาร์ไต้หวันใหม่ (TWD)</option>
+<option value="USD">สหดอลลาร์สหรัฐอเมริกา (USD)</option>
+    </select><br>
+<button (click)="naMe(box.value,box1.value)">change </button><br>
+
+</div-->

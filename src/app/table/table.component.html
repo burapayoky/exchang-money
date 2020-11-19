@@ -1,0 +1,82 @@
+<div class="table">
+
+	<table mdbTable striped="true">
+		<style>
+			table,
+			th,
+			td {
+				border: 1px solid grey;
+				border-collapse: collapse;
+				padding: 8px;
+				//margin: 20px;
+			}
+
+			table tr:nth-child(odd) {
+				background-color: #b7e4c7;
+			}
+
+			table tr:nth-child(even) {
+				background-color: #d8f3dc;
+			}
+		</style>
+
+		<thead>
+			<tr>
+				<th *ngFor="let head of headElements" scope="col">{{head}} </th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr mdbTableCol *ngFor="let el of elements">
+				<td>{{el.first}}</td>
+				<td>{{el.last}}</td>
+			</tr>
+		</tbody>
+
+	</table>
+
+  <!--table>
+    <tr>
+      <td><img src= “191163_๒๐๑๑๑๙_7.jpg”></td>
+      <td><img src= “ไฟล์รูปภาพ”>ข้อความ</td>
+    </tr>
+  </table-->
+
+</div>
+
+
+
+<!--div class = "table">
+
+<table mdbTable striped="true">
+  <style>
+    table, th , td  {
+      border: 1px solid grey;
+      border-collapse: collapse;
+      padding: 8px;
+      //margin: 20px;
+    }
+    table tr:nth-child(odd) {
+      background-color: #f1f1f1;
+    }
+    table tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+  </style>
+  
+  <thead>
+    <tr>
+      <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr mdbTableCol *ngFor="let el of elements">
+      <td>{{el.first}}</td>
+      <td>{{el.last}}</td>
+    </tr>
+  </tbody>
+
+</table>
+
+</div-->
